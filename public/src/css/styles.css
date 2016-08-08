@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+
+#contanier {
+    margin: 0;
+    padding: 0;
+}
+
+#container > header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: royalblue;
+}
+
+#container > header > a {
+    color: whitesmoke;
+    font-size: 1.1em;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+#container > header > a:last-child {
+    margin-left: auto;
+}
+
+#container > header > a:hover {
+    color: lightgray;
+}
+
+@media screen and (max-width: 450px) {
+    #container > header {
+        flex-direction: column;
+    }
+    #container > header > a {
+        margin: 7px auto;
+    }
+    #container > header > a:last-child {
+        margin: 7px auto;
+        padding: 7px auto;
+    }
+}
+
+.content-info {
+    margin: 0 auto;
+    padding: 20px auto 10px;
+    width: 100%;
+    max-width: 750px;
+    background-color: lightskyblue;
+    border: 2px solid darkblue;
+    text-align: center;
+}
+
+.content-info > p {
+    color: darkblue;
+    font-size: 0.9em;
+    line-height: 1.1em;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 750px;
+}
+
+.single-post {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.single-post > a {
+    text-decoration: none;
+}
+
+.single-post > a > h3,
+.single-post > h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    color: royalblue;
+}
+
+.single-post > a:hover > h3:hover {
+    color: darkblue;
+}
+
+.single-post > p {
+    margin: 10px auto 10px 0;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: dimgray;
+}
+
+.single-post > p > a {
+    color: dimgray;
+}
+
+.single-post > .votes-area {
+    display: flex;
+    align-items: center;
+}
+
+.single-post .votes-area > span {
+    font-size: 1.1em;
+    color: royalblue;
+    margin-right: 15px;
+}
+
+.single-post .votes-area > span:nth-child(1),
+.single-post .votes-area > span:nth-child(3) {
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.form-container > h2 {
+    color: dimgray;
+}
+
+.form-container > form >input[type="text"],
+.form-container > form > input[type="email"],
+.form-container > form > input[type="password"],
+.form-container > form > textarea,
+.form-container > form >input[type="submit"] {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 5px;
+    color: darkslategray;
+    border: none;
+}
+
+.form-container > form >input[type="text"]:focus,
+.form-container > form > input[type="email"]:focus,
+.form-container > form > input[type="password"]:focus,
+.form-container > form > textarea:focus{
+    border-bottom: 1px solid dimgray;
+}
+
+.form-container > form >input[type="submit"]{
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 12px;
+}
+
+.comments-box {
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-box > h3 {
+    color: dimgray;
+    margin: 0;
+    padding: 0;
+}
+
+.single-comment > p {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    color: darkgray;
+}
+
+.single-comment > p > a {
+    color: dimgray;
+    font-weight: 700;
+    margin-right: 10px;
+}
